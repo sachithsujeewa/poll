@@ -7,14 +7,23 @@ A simple Next.js application for collecting and voting on questions. No login re
 - 📝 Submit questions (10-500 characters)
 - 👍 Upvote questions (one vote per question per browser)
 - 📊 Questions automatically sorted by votes
-- 💾 Data persisted in JSON file
+- 💾 **Data persists across deployments** using Upstash Redis
 - 📱 Fully responsive design
 - 🌙 Dark mode support
 - 🚀 Free hosting on Vercel
 
+## ⚠️ Important: Redis Database Required
+
+**This app requires Upstash Redis for data persistence.** Without it, questions will disappear on each deployment.
+
+👉 **[WHICH_DATABASE_TO_PICK.md](WHICH_DATABASE_TO_PICK.md)** - Quick guide on what to click  
+👉 **[IMPORTANT_KV_SETUP.md](IMPORTANT_KV_SETUP.md)** - Complete setup instructions
+
+**Note**: As of June 2025, use **Upstash Redis** from Vercel Marketplace (replaces Vercel KV).
+
 ## Getting Started
 
-### Local Development
+### Local Development (UI Testing Only)
 
 1. Install dependencies:
 ```bash
